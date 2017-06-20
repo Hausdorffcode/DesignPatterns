@@ -10,21 +10,11 @@ namespace Factory
     public abstract class Pizza
     {
         string name;
-        string dough;
-        string sauce;
+        protected Dough dough;
+        protected Sauce sauce;
         ArrayList toppings = new ArrayList();
 
-        public void prepare()
-        {
-            Console.WriteLine("Preparing {0}", name);
-            Console.WriteLine("Tossing dough...");
-            Console.WriteLine("Adding sauce...");
-            Console.WriteLine("Adding toppings: ");
-            foreach (var item in toppings)
-            {
-                Console.WriteLine("   {0}", item);
-            }
-        }
+        public abstract void prepare();
 
         public virtual void bake()
         {

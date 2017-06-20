@@ -8,9 +8,19 @@ namespace Factory
 {
     public class CheesePizza : Pizza
     {
-        public CheesePizza()
+        PizzaIngredientFactory pif = null;
+
+        public CheesePizza(PizzaIngredientFactory pif)
         {
             this.Name = "CheesePizza";
+            this.pif = pif;
+        }
+
+        public override void prepare()
+        {
+            Console.WriteLine("Preparing {0}", this.Name);
+            this.dough = pif.createDough();
+            this.sauce = pif.createSauce();
         }
     }
 }

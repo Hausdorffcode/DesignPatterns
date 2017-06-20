@@ -11,13 +11,15 @@ namespace Factory
         public override Pizza createPizza(string type)
         {
             Pizza pizza = null;
+            PizzaIngredientFactory pif = new NYPizzaIngredientFactory();
+
             if (type == "cheese")
             {
-                pizza = new NYStyleCheesePizza();
+                pizza = new CheesePizza(pif);
             }
             else if (type == "greek")
             {
-                pizza = new NYStyleGreekPizza();
+                pizza = new GreekPizza(pif);
             }
             return pizza;
         }
