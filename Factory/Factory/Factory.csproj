@@ -44,8 +44,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CheesePizza.cs" />
+    <Compile Include="ChicagoPizzaIngredientFactory.cs" />
+    <Compile Include="ChicagoStyleCheesePizza.cs" />
+    <Compile Include="ChicagoStyleGreekPizza.cs" />
+    <Compile Include="ChicagoStylePizzaStore.cs" />
     <Compile Include="GreekPizza.cs" />
+    <Compile Include="Ingredient.cs" />
+    <Compile Include="NYPizzaIngredientFactory.cs" />
+    <Compile Include="NYStyleCheesePizza.cs" />
+    <Compile Include="NYStyleGreekPizza.cs" />
+    <Compile Include="NYStylePizzaStore.cs" />
     <Compile Include="Pizza.cs" />
+    <Compile Include="PizzaIngredientFactory.cs" />
     <Compile Include="PizzaStore.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

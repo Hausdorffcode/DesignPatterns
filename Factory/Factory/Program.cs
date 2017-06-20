@@ -10,8 +10,7 @@ namespace Factory
     {
         static void Main(string[] args)
         {
-            SimplePizzaFactory spf = new SimplePizzaFactory();
-            PizzaStore ps = new PizzaStore(spf);
+            PizzaStore ps = new ChicagoStylePizzaStore();
             ps.orderPizza("cheese");
             Console.ReadKey();
         }

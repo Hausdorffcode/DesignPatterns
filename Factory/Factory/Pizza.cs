@@ -26,12 +26,12 @@ namespace Factory
             }
         }
 
-        public void bake()
+        public virtual void bake()
         {
             Console.WriteLine("Bake for 25 minutes at 350");
         }
 
-        public void cut()
+        public virtual void cut()
         {
             Console.WriteLine("Cutting the pizza");
         }
